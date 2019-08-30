@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.Dashboard"
+    android:gravity="center"
+    tools:showIn="@layout/app_bar_dashboard">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/maindash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@+id/firstlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/housingNews"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="20dp"
+
+            >
+            <ImageView
+                android:id="@+id/imgnews"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+               android:layout_gravity="center_vertical"
+                android:src="@drawable/housing_news"
+                android:layout_margin="5dp"
+               />
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/abuja_housing_show"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="20dp"
+            >
+            <ImageView
+                android:id="@+id/imgPoll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:src="@drawable/aihs_logo"/>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/second_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/firstlayout"
+        android:layout_marginBottom="20dp"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/register"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="5dp"
+            >
+            <ImageView
+                android:id="@+id/imgRegister"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/regis"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/register"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:textSize="25sp"
+                android:textColor="@color/colorWhite"
+                android:textAlignment="center"/>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/second_layout"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:weightSum="2">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/liveStreams"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            app:cardElevation="8dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            app:cardCornerRadius="20dp"
+            >
+            <ImageView
+                android:id="@+id/imgLive"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/ic_live"
+                android:layout_gravity="center_vertical"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="@string/live_stream"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/contaner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</RelativeLayout>

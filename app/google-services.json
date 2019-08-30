@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "853099921668",
+    "firebase_url": "https://housingnews-aed18.firebaseio.com",
+    "project_id": "housingnews-aed18",
+    "storage_bucket": "housingnews-aed18.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:853099921668:android:5be39f17f63f56c4",
+        "android_client_info": {
+          "package_name": "com.fesadeb.housingnews"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "853099921668-n2ej5bteahk11hjmrl2p14935v9lqfpk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fesadeb.housingnews",
+            "certificate_hash": "e7291ac7e4cb7caaaf7c4172e747350685cb0f4e"
+          }
+        },
+        {
+          "client_id": "853099921668-1rpddvgsf2oi9684dchlj5051roc49er.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkfmNmi4Gp0nkFvDVymKMXXwTlRpAVCM8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "853099921668-1rpddvgsf2oi9684dchlj5051roc49er.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,76 @@
+//buildscript {
+//    repositories {
+//        maven { url 'https://plugins.gradle.org/m2/'}
+//    }
+//    dependencies {
+//        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.11.0, 0.99.99]'
+//    }
+//}
+//apply plugin: 'com.onesignal.androidsdk.onesignal-gradle-plugin'
+//
+//repositories {
+//    maven { url 'https://maven.google.com' }
+//}
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.fesadeb.housingnews"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 2
+        versionName "2.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.google.firebase:firebase-auth:16.0.3'
+    implementation "com.android.support:support-compat:27.1.1"
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+//    implementation 'com.google.code.gson:gson:2.3.0'
+//    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+//    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'org.jsoup:jsoup:1.10.3'
+    implementation 'com.valdesekamdem.library:md-toast:0.9.0'
+    implementation 'com.kaopiz:kprogresshud:1.1.0'
+    implementation 'com.github.ViksaaSkool:AwesomeSplash:v1.0.0'
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+    implementation 'com.hbb20:ccp:2.1.9'
+    // retrofit
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.0.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.0.2'
+    //firebase
+
+
+    implementation 'com.google.firebase:firebase-storage:16.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+
+//    implementation 'com.firebaseui:firebase-ui:3.2.2'
+//    implementation 'com.google.firebase:firebase-crash:11.8.0'
+//    implementation 'com.onesignal:OneSignal:[3.9.1, 3.99.99]'
+
+
+}
+apply plugin: 'com.google.gms.google-services'

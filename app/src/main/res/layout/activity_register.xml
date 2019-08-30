@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".activities.Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <LinearLayout
+                android:id="@+id/attend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/et_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/first_name"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+                <EditText
+                    android:id="@+id/et_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/last_name"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/email_address"
+                    android:paddingLeft="20dp"
+                    android:inputType="textEmailAddress"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/countryCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    app:ccp_showFlag="true"
+                    android:background="@drawable/et_border"
+                    app:ccp_countryPreference="us,in"
+                    app:ccp_showFullName="true"/>
+                <EditText
+                    android:id="@+id/states"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/enter_state"
+                    android:paddingLeft="20dp"
+                    android:inputType="textAutoComplete|textAutoCorrect"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+                <EditText
+                    android:id="@+id/organization"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="@string/company_organization"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/exhibit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/et_contactPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Contact Person"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+                <EditText
+                    android:id="@+id/et_nature_business"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Nature Of Business"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/select_book"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:entries="@array/book"
+                    android:gravity="center"
+                    android:background="@drawable/et_border"
+                    />
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ceo_forum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+                <EditText
+                    android:id="@+id/et_forum_contactPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Contact Person"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+                <EditText
+                    android:id="@+id/et_forum_position"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Position"
+                    android:paddingLeft="20dp"
+                    android:textStyle="bold"
+                    android:layout_margin="10dp"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textAlignment="gravity"
+                    android:background="@drawable/et_border"/>
+
+                <TextView
+                    android:id="@+id/tv_forum"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:text="@string/note_participation"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/conference"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/tv_conference"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:textSize="25sp"
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/conference_note"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/btn_select"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+
+                <Button
+                    android:id="@+id/btn_attend"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/select_backg"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="@string/register_to_attend"
+                    />
+
+                <Button
+                    android:id="@+id/btn_exhibit"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/select_backg"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="@string/register_to_exhibit"
+                    />
+
+                <Button
+                    android:id="@+id/btn_ceo_forum"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/select_backg"
+                    android:textColor="@color/colorWhite"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="@string/register_for_ceo_forum"
+                    />
+
+                <Button
+                    android:id="@+id/btn_conference"
+                    android:layout_width="300dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/select_backg"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="@string/register_for_conference"
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_margin="@dimen/activity_horizontal_margin">
+
+
+                <Button
+                    android:id="@+id/btn_sign"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/btn_register"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:textSize="15sp"
+                    android:text="REGISTER"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

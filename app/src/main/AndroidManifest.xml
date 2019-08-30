@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fesadeb.housingnews">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_abuja"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_abuja"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.PrivacyWeb"></activity>
+        <activity android:name=".activities.PrivacyPolicy" />
+        <activity android:name=".activities.Register" />
+        <activity
+            android:name=".activities.AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.ContactUs" />
+        <activity
+            android:name=".activities.AIHSActivity"
+            android:label="@string/title_activity_aihs"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.News" />
+        <activity android:name=".activities.PostActivity" />
+        <activity android:name=".activities.IntroSlider" />
+        <activity
+            android:name=".activities.Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

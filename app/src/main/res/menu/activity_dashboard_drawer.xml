@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_feed"
+            android:title="@string/news_feed" />
+        <item
+            android:id="@+id/nav_show"
+            android:icon="@drawable/ic_video"
+            android:title="HOUSING SHOW" />
+        <item
+            android:id="@+id/nav_reg"
+            android:icon="@drawable/ic_reg"
+            android:title="REGISTER AIHS " />
+        <item
+            android:id="@+id/nav_live"
+            android:icon="@drawable/ic_live"
+            android:title="LIVE STREAMING" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_content"
+                android:title="CONTACT US" />
+
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_event"
+                android:title="ABOUT AIHS" />
+
+            <item
+                android:id="@+id/nav_privacy"
+                android:icon="@drawable/ic_privacy"
+                android:title="Privacy Policy" />
+        </menu>
+    </item>
+
+</menu>

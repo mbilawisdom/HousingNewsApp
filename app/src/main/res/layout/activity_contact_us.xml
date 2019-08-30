@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ContactUs">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Abuja Internation Housing Show Assistance"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/support"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/support"/>
+
+        <LinearLayout
+            android:id="@+id/icons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="80dp"
+            android:gravity="center"
+            android:layout_below="@+id/support">
+
+            <ImageView
+                android:id="@+id/call"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_call"/>
+
+            <ImageView
+                android:id="@+id/sms"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_sms"/>
+
+            <ImageView
+                android:id="@+id/mail"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/ic_email"/>
+
+            <ImageView
+                android:id="@+id/web"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="40dp"
+                android:src="@drawable/website"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We Will Contact you soon"
+            android:layout_below="@+id/icons"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

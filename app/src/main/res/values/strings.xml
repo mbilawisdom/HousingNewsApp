@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Housing News</string>
+    <string name="title_activity_dashboard"> </string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="housing_news">HOUSING NEWS</string>
+    <string name="register">REGISTER</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+    <string name="live_stream">SHOW STREAMING</string>
+    <string name="news_feed">NEWS FEED</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="company_organization">Company/Organization</string>
+    <string name="enter_state">Enter state</string>
+    <string name="note_participation">NOTE: Participation fee N60,000</string>
+    <string name="note_conference">NOTE: Conference Participant - ₦ 45, 000 ($130 )</string>
+    <string name="conference_note">NOTE: Conference Participant - ₦ 45, 000 ($130 )</string>
+    <string name="register_for_ceo_forum">REGISTER FOR CEO FORUM</string>
+    <string name="register_for_conference">REGISTER FOR CONFERENCE</string>
+    <string name="register_to_attend">REGISTER TO ATTEND</string>
+    <string name="register_to_exhibit">REGISTER TO EXHIBIT</string>
+
+    <string-array name="book">
+        <item>Select Square Space</item>
+        <item>3x3 Square Meters - ₦ 400, 000 ($1,500)</item>
+        <item>3x6 Square Meters - ₦ 780, 000 ($2,250)</item>
+        <item>3x9 Square Meters - ₦ 1,100.000 ($3,150)</item>
+        <item>3x12 Square Meters - ₦ 1,400,000 ($3,900)</item>
+    </string-array>
+    <string name="title_activity_aihs">WATCH HOUSING TRENDS</string>
+    <string name="title_activity_about_us">About Us</string>
+    <string name="privacy_policy">
+       Fesadeb Communications operates the https://housingnews.org.ng website, abuja Housing Show and Housing News App, which provides the SERVICE.
+        This page is used to inform website visitors regarding our policies with the collection, use, and
+        disclosure of Personal Information if anyone decided to use our Service, the Housing News website.
+        If you choose to use our Service, then you agree to the collection and use of information in relation
+        with this policy. The Personal Information that we collect are used for providing and improving the Service.
+        We will not use or share your information with anyone except as described in this Privacy Policy.
+        
+        Information Collection and Use
+        For a better experience while using our Service, we may require you to provide us with certain personally 
+        identifiable information,including but not limited to your name, phone number,
+        and postal address. The information that we collect will be used to 
+        contact or identify you.
+    </string>
+    <string name="privacy">Privacy Policy</string>
+
+</resources>
